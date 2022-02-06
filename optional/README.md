@@ -1,5 +1,7 @@
 ## Необязательная часть
 
+<details><summary>.</summary>
+
 1. При помощи `ansible-vault` расшифруйте все зашифрованные файлы с переменными.
    ```bash
    ansible-vault decrypt group_vars/deb/examp.yml --vault-password-file vault_password.txt
@@ -66,6 +68,9 @@
    localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
    ubuntu                     : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
    ```
+
+</details>
+
 4. Добавьте новую группу хостов `fedora`, самостоятельно придумайте для неё переменную. В качестве образа можно использовать [этот](https://hub.docker.com/r/pycontribs/fedora).
    ```yaml
    $ cat inventory/prod.yml
@@ -156,3 +161,5 @@
    docker-compose down
    ```
 6. Все изменения должны быть зафиксированы и отправлены в вашей личный репозиторий.
+
+   [commit](https://github.com/run0ut/netology-81/commit/9a61e0a3c6ed0af443dba22d6df00b69b0452c34)
