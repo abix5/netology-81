@@ -8,7 +8,7 @@
       - name: Print fact
         debug:
           msg: "{{ some_fact }}"
-      - name: Pront custom var
+      - name: Print custom var
         debug:
           msg: "{{ custom_var }}"
         when:

@@ -89,7 +89,7 @@
        hosts: all
        tasks:
    ...
-         - name: Pront custom var
+         - name: Print custom var
            debug:
              msg: "{{ custom_var }}"
            when:
@@ -139,7 +139,7 @@
        "msg": "PaSSw0rd"
    }
    
-   TASK [Pront custom var] *********************************************************************************************
+   TASK [Print custom var] *********************************************************************************************
    skipping: [centos7]
    skipping: [ubuntu]
    skipping: [localhost]
